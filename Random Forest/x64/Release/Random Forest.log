@@ -1,0 +1,32 @@
+﻿Build started 7/20/2014 6:33:53 PM.
+     1>Project "D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\Random Forest\Random Forest.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt CsvParser.cpp main.cpp
+         CsvParser.cpp
+     1>CsvParser.cpp(97): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>CsvParser.cpp(98): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>CsvParser.cpp(113): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>CsvParser.cpp(118): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+         main.cpp
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\Dataset.h(34): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\Dataset.h(82): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\Dataset.h(87): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\Sampleset.h(50): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\Node.h(58): warning C4800: 'const int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\BootstrapSet.h(15): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\SamplesetSplit.h(28): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\RandomTree.h(91): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\RandomTree.h(118): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\osama\programming\projects\titanic - machine learning from disaster\c++ random forest model\random forest\RandomForest.h(87): warning C4018: '<' : signed/unsigned mismatch
+     1>main.cpp(62): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\x64\Release\Random Forest.exe" /NOLOGO "D:\Osama\Programming\C++\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64\pthreadVC2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\x64\Release\Random Forest.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\x64\Release\Random Forest.lib" /MACHINE:X64 x64\Release\CsvParser.obj
+         x64\Release\main.obj
+         Generating code
+         Finished generating code
+         Random Forest.vcxproj -> D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\x64\Release\Random Forest.exe
+     1>Done Building Project "D:\Osama\Programming\Projects\Titanic - Machine Learning from Disaster\C++ Random Forest Model\Random Forest\Random Forest.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.51

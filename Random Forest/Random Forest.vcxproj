@@ -81,13 +81,16 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>D:\Osama\Programming\C++\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Osama\Programming\C++\Eigen;D:\Osama\Programming\C++\pthreads-w32-2-9-1-release\Pre-built.2;D:\Osama\Programming\C++\boost_1_55_0\boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>D:\Osama\Programming\C++\pthreads-w32-2-9-1-release\Pre-built.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>"D:\Osama\Programming\C++\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64\pthreadVC2.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -109,18 +112,32 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>"D:\Osama\Programming\C++\pthreads-w32-2-9-1-release\Pre-built.2\lib\x64\pthreadVC2.lib";%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CsvParser.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BootstrapSet.h" />
+    <ClInclude Include="Sampleset.h" />
+    <ClInclude Include="CsvParser.h" />
+    <ClInclude Include="Dataset.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="RandomForest.h" />
+    <ClInclude Include="RandomTree.h" />
+    <ClInclude Include="SamplesetSplit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Data\train.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
