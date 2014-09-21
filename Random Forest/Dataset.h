@@ -113,8 +113,10 @@ public:
 		{
 			double e = 0;
 			// bits of information i.e base 2
-			e -= lessEqProb * (log10(lessEqProb) / log10(2.0));
-			e -= greaterProb * (log10(greaterProb) / log10(2.0));
+			if(lessEqProb>0)
+				e += -lessEqProb * (log10(lessEqProb) / log10(2.0));
+			if(greaterProb>0)
+				e += -greaterProb * (log10(greaterProb) / log10(2.0));
 			return e;
 		}
 	};
